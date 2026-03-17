@@ -125,12 +125,6 @@ body {
     top: 22px;
     left: 746px;
 }
-.btn-blue {
-    width: 100;
-    height: 40;
-    opacity: 1;
-
-}
 .nav-bottom {
 
     border-top: 1px solid var(--border);
@@ -258,9 +252,13 @@ body {
     cursor: pointer;
 
     list-style: none;
-
-    font-size: 14px;
-
+    font-family: Inter, sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #505050;
 }
 
 
@@ -277,7 +275,9 @@ body {
 
 .hero-banner {
 
-    background: #E0F2F1;
+    background-image: url(layouts/latest-trending-items.png);
+    background-size:cover;
+    background-position:center;
 
     padding: 40px;
 
@@ -305,26 +305,58 @@ body {
 
 .blue-light {
 
-    background: #E3F2FF;
+    background: #E3F0FF;
 
 }
+.btn-blue2 {
+    background-color: #0067FF;
+    border:none;
+    width: 170px;
+    height: 30px;
+    top:253px;
+    left:1100px;
+    border-radius: 6px;
+    padding-right:10px;
+    padding-left:10px;
+    gap: 10px;
+    text-justify: vertical;
+    color: white;
+    font-weight: 500;
+    font-style: medium;
+    size:13px;
+}
 
-
-
+.bton-white {
+    width: 170px;
+    height: 30px;
+    top:290px;
+    left:1100px;
+    border-radius: 6px;
+    padding-left:10px;
+    padding-right:10px;
+    background: white;
+    border: 1px solid #DEE2E7;
+    top:20px;
+}
 .orange {
-
     background: #F38332;
-
+    font-size:16px;
     color: #fff;
+    font-weight:400;
+    font-style: regular;
+    line-height:100%;
+    padding-top:20px;
+        padding-bottom:20px;
+    padding-top:20px;
 
 }
 
 
 
 .teal {
-
+    font-size:16px;
     background: #55BDC3;
-
+    font-weight:400;
     color: #fff;
 
 }
