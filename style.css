@@ -67,9 +67,9 @@ body {
 }
 
 .logo {
-    top:12px;
-    width:150;
-    height:46;
+    top: 12px;
+    width: 150;
+    height: 46;
 }
 
 .search-bar {
@@ -80,10 +80,10 @@ body {
 
     border-radius: 6px;
 
-    width:665px;
-    height:40px;
+    width: 665px;
+    height: 40px;
     top: 22px;
-    left:326px;
+    left: 326px;
     margin: 0 20px;
 
     overflow: hidden;
@@ -125,6 +125,7 @@ body {
     top: 22px;
     left: 746px;
 }
+
 .nav-bottom {
 
     border-top: 1px solid var(--border);
@@ -192,7 +193,7 @@ body {
     align-items: center;
 
     gap: 5px;
-    left:1100px;
+    left: 1100px;
 }
 
 
@@ -276,8 +277,8 @@ body {
 .hero-banner {
 
     background-image: url(layouts/latest-trending-items.png);
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 
     padding: 40px;
 
@@ -302,82 +303,99 @@ body {
 }
 
 
-.profile-header{
-    display:flex;
+.profile-header {
+    display: flex;
     align-items: centers;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     gap: 10px;
 }
-.profile-header img{
-    margin-right:5px;
+
+.profile-header img {
+    margin-right: 5px;
 
 }
+
 .profile-header p {
     font-size: 14px;
 }
+
 .blue-light {
 
     background: #E3F0FF;
 
 }
+
 .bet-box2 {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap:7px;
+    gap: 7px;
 }
 
 .btn-blue2 {
     background-color: #0067FF;
-    border:none;
+    border: none;
     width: 170px;
     height: 30px;
-    top:253px;
-    left:1100px;
+    top: 253px;
+    left: 1100px;
     border-radius: 6px;
-    padding-right:10px;
-    padding-left:10px;
+    padding-right: 10px;
+    padding-left: 10px;
     gap: 10px;
     text-justify: vertical;
     color: white;
     font-weight: 500;
     font-style: medium;
-    size:13px;
+    size: 13px;
 }
 
 .bton-white {
     width: 170px;
     height: 30px;
-    top:290px;
-    left:1100px;
+    top: 290px;
+    left: 1100px;
     border-radius: 6px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     background: white;
     border: 1px solid #DEE2E7;
-    top:20px;
+    top: 20px;
 }
+
 .orange {
 
-    width:163px;
+    width: 163px;
     background: #F38332;
     color: #fff;
-    font-weight:400;
+    font-weight: 400;
     font-style: regular;
     line-height: 100%;
     padding-top: 20px;
-        padding-bottom: 20px;
-    font-size:16px;
+    padding-bottom: 20px;
+    font-size: 16px;
 }
 
 .teal {
-    font-size:16px;
+    font-size: 16px;
     background: #55BDC3;
-    font-weight:400;
+    font-weight: 400;
     color: #fff;
 
 }
 
+.deal-timer h4 {
+    font-weight: 600;
+    font-style: semi-bold;
+    font-size: 20px;
+    letter-spacing: -0.2px;
+}
 
+.deal-timer p {
+    color: #8B96A5;
+    line-height: 100%;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
 
 /* --- ASYMMETRIC LAYOUT --- */
 
@@ -400,13 +418,18 @@ body {
 }
 
 
-
 .cat-banner {
 
     width: 280px;
 
     padding: 20px;
+    background-image: url(layouts/electrnics-consumer.png);
+    background-size: cover;
 
+}
+
+.home-bg {
+    background-image: url(layouts/home-outdoor.png);
     background-size: cover;
 
 }
@@ -425,8 +448,26 @@ body {
 
 }
 
+.cat-banner button {
+    width: 123;
+    height: 40;
+    top: 942px;
+    left: 149px;
+    opacity: 1;
+    border-width: 1px;
+    border-radius: 6px;
+    padding-right: 16px;
+    padding-left: 16px;
+    gap: 10px;
 
+}
 
+.cat-banner h3 {
+    font-size:20px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
 .c-item {
 
     border: 0.5px solid var(--border);
@@ -441,7 +482,19 @@ body {
 
 }
 
+.c-item div span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: #8B96A5;
+}
 
+.c-item div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1C1C1C;
+
+}
 
 .c-item img {
 
@@ -708,21 +761,32 @@ body {
 .t-box {
 
     background: #606060;
-
-    color: #fff;
-
     padding: 5px;
 
     border-radius: 4px;
+    color: #fff;
 
     text-align: center;
-
+    font-size: 12px;
     width: 45px;
-
-    font-size: 11px;
-
+    height: 38px;
+    top: 675px;
+    border-radius: 4px;
+    font-weight: 400;
+    text-align: horizontal;
 }
 
+.d-item:last-child {
+    border-right: none;
+}
+
+.t-box span {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;
+    color: #fff;
+
+}
 
 
 .deal-products {
