@@ -302,12 +302,30 @@ body {
 }
 
 
+.profile-header{
+    display:flex;
+    align-items: centers;
+    margin-bottom:10px;
+    gap: 10px;
+}
+.profile-header img{
+    margin-right:5px;
 
+}
+.profile-header p {
+    font-size: 14px;
+}
 .blue-light {
 
     background: #E3F0FF;
 
 }
+.bet-box2 {
+    display:flex;
+    flex-direction: column;
+    gap:7px;
+}
+
 .btn-blue2 {
     background-color: #0067FF;
     border:none;
@@ -339,19 +357,17 @@ body {
     top:20px;
 }
 .orange {
+
+    width:163px;
     background: #F38332;
-    font-size:16px;
     color: #fff;
     font-weight:400;
     font-style: regular;
-    line-height:100%;
-    padding-top:20px;
-        padding-bottom:20px;
-    padding-top:20px;
-
+    line-height: 100%;
+    padding-top: 20px;
+        padding-bottom: 20px;
+    font-size:16px;
 }
-
-
 
 .teal {
     font-size:16px;
