@@ -276,7 +276,7 @@ body {
 
 .hero-banner {
 
-    background-image: url(layouts/latest-trending-items.png);
+    background-image: url(layouts/latest-trending-items-background-picture.png);
     background-size: cover;
     background-position: center;
 
@@ -288,7 +288,25 @@ body {
 
 }
 
+.hero-banner h3 {
+    /* font-family: Inter; */
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
 
+}
+
+.hero-banner span {
+    /* font-family: Inter; */
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
 
 .widget {
 
@@ -399,87 +417,73 @@ body {
 
 /* --- ASYMMETRIC LAYOUT --- */
 
+/* --- ASYMMETRIC LAYOUT (FIXED) --- */
+
 .cat-block {
-
     display: flex;
-
     background: var(--white);
-
     border: 1px solid var(--border);
-
     border-radius: 6px;
-
     margin-top: 20px;
-
     overflow: hidden;
-
     min-height: 257px;
-
 }
 
-
 .cat-banner {
-
     width: 280px;
-
     padding: 20px;
-    background-image: url(layouts/electrnics-consumer.png);
+    background-image: url('layouts/electrnics-consumer.png');
+    /* Single quotes standard */
     background-size: cover;
-
 }
 
 .home-bg {
-    background-image: url(layouts/home-outdoor.png);
+    background-image: url('layouts/home-outdoor.png');
     background-size: cover;
-
 }
 
-
-
 .cat-items {
-
     display: grid;
-
+    /* Grid count fix: repeat(4, 1fr) for 4 fixed columns */
     grid-template-columns: repeat(4, 1fr);
-
     grid-template-rows: repeat(2, 1fr);
-
     flex: 1;
-
 }
 
 .cat-banner button {
-    width: 123;
-    height: 40;
-    top: 942px;
-    left: 149px;
+    width: 123px;
+    height: 40px;
+    /* absolute positioning removal needed for flexibility */
+    position: relative;
+    top: auto;
+    left: auto;
     opacity: 1;
-    border-width: 1px;
+    border: 1px solid var(--border);
     border-radius: 6px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 0 16px;
     gap: 10px;
-
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .cat-banner h3 {
-    font-size:20px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 26px;
     letter-spacing: -0.2px;
 }
+
 .c-item {
-
     border: 0.5px solid var(--border);
-
     padding: 15px;
-
     display: flex;
-
-    flex-direction: column;
-
+    /* Element position fix: row for text and image side-by-side */
+    flex-direction: row;
     justify-content: space-between;
-
+    align-items: flex-start;
+    height: 128px;
+    /* Standard row height */
+    box-sizing: border-box;
 }
 
 .c-item div span {
@@ -493,22 +497,17 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #1C1C1C;
-
+    margin: 0;
 }
 
 .c-item img {
-
     width: 65px;
-
     height: 65px;
-
     object-fit: contain;
-
     align-self: flex-end;
-
+    /* Design requirement */
+    margin-bottom: 5px;
 }
-
-
 
 /* --- INQUIRY FORM --- */
 
@@ -716,6 +715,16 @@ body {
 
 }
 
+.btn-white {
+    /* font-family: Inter; */
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 10px;
+}
 
 
 .deals-section {
