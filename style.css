@@ -651,6 +651,57 @@ body {
     border-radius: 5px;
 
 }
+.regions-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-bottom: 24px;
+}
+
+.region-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px 10px; 
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.region-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.region-item img {
+    width: 28px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.region-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.country-name {
+    font-size: 16px;
+    color: #1c1c1c;
+    margin: 0;
+    line-height: 1.2;
+
+}
+
+.site-link {
+    font-size: 13px;
+    color: #8b96a5;
+    margin: 0;
+}
 
 .form-row .footer-main {
 
@@ -1022,6 +1073,7 @@ body {
     line-height: 22px;
     letter-spacing: 0px;
     color: #1C1C1C;
+    margin-left:10px;
 }
 
 .srv-img {
