@@ -513,23 +513,42 @@ body {
 
 .inquiry-banner {
 
-    background: linear-gradient(90deg, #127FFF 0%, #0067FF 100%);
-
+    background-image: url(layouts/quote-box.png);
+    background-size: cover;
+    background-position: center;
+    max-width: 95%;
+    width: 1180px;
+    margin: 30px auto 0 auto;
+    height: 420px;
     padding: 40px;
-
     border-radius: 6px;
-
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
     gap: 40px;
-
-    margin-top: 30px;
-
     color: #fff;
+    box-sizing: border-box;
+}
+
+.inquiry-text h2 {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
 
 }
 
+.inquiry-text p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 
+}
 
 .inquiry-card {
 
@@ -541,21 +560,23 @@ body {
 
     border-radius: 8px;
 
-    width: 440px;
-
+    width: 491px;
+    height: 346px;
+    top: 1436px;
+    left: 788px;
 }
 
+.quantity&send {
+    display: flex;
+    flex-direction: row;
+}
 
 
 .form-group input,
 
-.form-group textarea,
+.form-group textarea {
 
-.form-row input,
-
-.form-row select {
-
-    width: 100%;
+    width: 440px;
 
     padding: 15px;
 
@@ -571,8 +592,16 @@ body {
 
 }
 
+.form-group textarea {
+    width: 440px;
+    height: 73px;
+    top: 1564px;
+    left: 808px;
+    opacity: 1;
 
+}
 
+.form-row
 /* --- FOOTER (Updated Spacing) --- */
 
 .footer-main {
@@ -597,7 +626,44 @@ body {
 
 }
 
+.newsletter h3 {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #1C1C1C;
+}
 
+.newsletter p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #606060;
+}
+
+.sub-form  input{
+    width: 230px;
+    height: 40px;
+    opacity: 1;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: #e0e0e0;
+    padding: 0 15px 0 35px;
+    font-size: 14px;
+    background-image: url(layouts/email-icon-input.png);
+    outline: none;  
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 16px;
+    border: 1px #DEE2E7 solid;
+}
 
 .footer-links {
 
@@ -662,21 +728,13 @@ body {
 .socials i {
 
     background: #BDC4CD;
-
     color: var(--white);
-
     width: 32px;
-
     height: 32px;
-
     border-radius: 50%;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
 }
 
 
@@ -696,9 +754,16 @@ body {
     border-radius: 6px;
 
     cursor: pointer;
-
+    width: 108px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 6px;
+    padding-right: 16px;
+    padding-left: 16px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
 }
-
 
 
 .btn-white {
@@ -864,6 +929,15 @@ body {
 
 }
 
+.p-card p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #8B96A5;
+}
 
 
 .srv-grid {
@@ -890,7 +964,15 @@ body {
 
 }
 
-
+.s-card p {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #1C1C1C;
+}
 
 .srv-img {
 
@@ -901,7 +983,8 @@ body {
     object-fit: cover;
 
     border-radius: 6px 6px 0 0;
-
+    opacity: 100%;
+    filter: saturate(115%) brightness(70%);
 }
 
 
@@ -932,7 +1015,27 @@ body {
 
 }
 
+.bottom-flex p {
+    opacity: 1;
+    color: #606060;
+}
 
+.f-col p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #505050;
+}
+
+.lang-select img {
+    width: 24;
+    height: 17;
+    opacity: 1;
+
+}
 
 .footer-bottom {
 
@@ -951,4 +1054,8 @@ body {
     justify-content: space-between;
 
     font-size: 14px;
+}
+
+body {
+    font-family: 'Inter';
 }
