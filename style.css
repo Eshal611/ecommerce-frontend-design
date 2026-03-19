@@ -1315,9 +1315,11 @@ body {
     max-height: 180px;
 }
 
-.lv-card-mid h4 {
-    font-size: 18px;
+#lv-brand-head {
+    font-size: 16px;
     margin-bottom: 8px;
+    font-weight: 500;
+    line-height: 22px;
 }
 
 .lv-card-price strong {
