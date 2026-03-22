@@ -14,7 +14,7 @@
 
     <header class="main-header">
         <div class="container nav-top">
-            <div class="logo"><img src="layouts/brand-image-logo.png" alt="Logo" width="160px"></div>
+            <div class="logo"><img src="../layouts/brand-image-logo.png" alt="Logo" width="160px"></div>
             <div class="search-bar">
                 <input type="text" placeholder="Search">
                 <select>
@@ -23,16 +23,16 @@
                 <button class="btn-blue">Search</button>
             </div>
             <div class="user-actions">
-                <div class="action-item"><img src="layouts/prof-icon.png" width="16px">
+                <div class="action-item"><img src="../layouts/prof-icon.png" width="16px">
                     <p>Profile</p>
                 </div>
-                <div class="action-item"><img src="layouts/Message.png" width="16px">
+                <div class="action-item"><img src="../layouts/Message.png" width="16px">
                     <p>Message</p>
                 </div>
-                <div class="action-item"><img src="layouts/orders.png" width="16px">
+                <div class="action-item"><img src="../layouts/orders.png" width="16px">
                     <p>Orders</p>
                 </div>
-                <div class="action-item"><img src="layouts/MyCart.png" width="16px">
+                <div class="action-item"><img src="../layouts/MyCart.png" width="16px">
                     <p>My cart</p>
                 </div>
             </div>
@@ -45,16 +45,21 @@
                     <a href="#">Gift boxes</a>
                     <a href="#">Projects</a>
                     <a href="#">Menu item</a>
-                    <div class="dropdown"> <a href="#">Help </a><img src="layouts/showarrow.png" width="10px"></div>
+                    <div class="dropdown"> <a href="#">Help </a><img src="../layouts/showarrow.png" width="10px"></div>
                 </div>
                 <div class="nav-links-right">
-                    <div class="nav-item">English, USD <img src="layouts/showarrow.png" width="10px"> </div>
-                    <div class="nav-item">Ship to <img src="layouts/germany-flag.png" width="20px"> <img
-                            src="layouts/showarrow.png" width="10px"> </div>
+                    <div class="nav-item">English, USD <img src="../layouts/showarrow.png" width="10px"> </div>
+                    <div class="nav-item">Ship to <img src="../layouts/germany-flag.png" width="20px"> <img
+                            src="../layouts/showarrow.png" width="10px"> </div>
                 </div>
             </div>
         </nav>
     </header>
+    <div class="container" style="padding: 15px 0 0 0;">
+        <button onclick="location.href='grid-view.html'" style="cursor:pointer; padding: 5px 10px; border: 1px solid #dee2e7; background: #fff; border-radius: 6px;">
+            <i class="fa fa-list"></i> Switch to Grid View
+        </button>
+    </div>
 
     <div class="container lv-breadcrumb">
         Home <i class="fa fa-chevron-right"></i> Clothings <i class="fa fa-chevron-right"></i> Men's wear <i
@@ -139,7 +144,7 @@
             </div>
 
             <div class="lv-card">
-                <div class="lv-card-left"><img src="layouts/red-smart-phone.png"></div>
+                <div class="lv-card-left"><img src="../layouts/red-smart-phone.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">Canon Cmera EOS 2000, Black 10x zoom</p>
                     <div class="lv-card-price"><strong>$998.00</strong> <del>$1128.00</del></div>
@@ -156,7 +161,7 @@
             </div>
 
             <div class="lv-card">
-                <div class="lv-card-left"><img src="layouts/Canon-Cameras.png"></div>
+                <div class="lv-card-left"><img src="../layouts/Canon-Cameras.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">GoPro HERO6 Black 4K Action Camera-Black</p>
                     <div class="lv-card-price"><strong>$998.00</strong></div>
@@ -172,7 +177,7 @@
             </div>
 
             <div class="lv-card">
-                <div class="lv-card-left"><img src="layouts/Lsmart-phones.png"></div>
+                <div class="lv-card-left"><img src="../layouts/Lsmart-phones.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">GoPro HERO6 4K Action Camera - Black</p>
                     <div class="lv-card-price"><strong>$998.00</strong> </div>
@@ -188,7 +193,7 @@
             </div>
 
             <div class="lv-card">
-                <div class="lv-card-left"><img src="layouts/laptops.png"></div>
+                <div class="lv-card-left"><img src="../layouts/laptops.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">GoPro HERO6 4K Action Camera - Black</p>
                     <div class="lv-card-price"><strong>$998.00</strong></div>
@@ -204,7 +209,7 @@
             </div>
 
             <div class="lv-card">
-                <div class="lv-card-left"><img src="layouts/smart-watches.png"></div>
+                <div class="lv-card-left"><img src="../layouts/smart-watches.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">GoPro HERO6 4K Action Camera - Black</p>
                     <div class="lv-card-price"><strong>$988.00</strong><del>$1128.00</del></div>
@@ -220,7 +225,7 @@
             </div>
 
             <div class="lv-card">
-                <div class="lv-card-left"><img src="layouts/white-headphones.png"></div>
+                <div class="lv-card-left"><img src="../layouts/white-headphones.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">GoPro HERO6 4K Action Camera - Black</p>
                     <div class="lv-card-price"><strong>$988.00</strong> </div>
@@ -250,28 +255,66 @@
         </section>
     </main>
 
-    <footer class="footer-main">
+        <footer class="footer-main">
+
         <div class="newsletter">
+
             <div class="container">
+
                 <h3>Subscribe on our newsletter</h3>
+
                 <p>Get daily news on upcoming offers from many suppliers</p>
+
                 <div class="sub-form">
-                    <input type="email" placeholder="Email"><button class="btn-blue">Subscribe</button>
+
+                    <input type="email" placeholder="Email">
+
+                    <button class="btn-blue">Subscribe</button>
+
                 </div>
+
             </div>
+
         </div>
+
         <div class="container footer-links">
+
             <div class="f-col brand-col">
-                <img src="layouts/brand-image-logo.png" width="150px">
+
+                <img src="../layouts/brand-image-logo.png" alt="Logo" width="150px"  height="46px" class="footer-logo">
+
                 <p>Best information about the company<br>gies here but now lorem ipsum is</p>
-                <div class="socials"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i
-                        class="fab fa-linkedin-in"></i><i class="fab fa-instagram"></i> <i class="fab fa-youtube"></i>
+
+                <div class="socials">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                    <i class="fab fa-twitter"></i>
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                    <i class="fab fa-instagram"></i>
+
+                    <i class="fab fa-youtube"></i>
+
                 </div>
+
             </div>
+
             <div class="f-col">
-                <h4>About</h4><a href="#">About Us</a><a href="#">Find store</a><a href="#">Categories</a><a
-                    href="#">Blogs</a>
+
+                <h4>About</h4>
+
+                <a href="#">About Us</a>
+
+                <a href="#">Find store</a>
+
+                <a href="#">Categories</a>
+
+                <a href="#">Blogs</a>
+
             </div>
+
             <div class="f-col">
 
                 <h4>Partnership</h4>
@@ -287,45 +330,64 @@
             </div>
 
             <div class="f-col">
+
                 <h4>Information</h4>
-                <a href="#">Money Refund</a>
+
                 <a href="#">Help Center</a>
+
+                <a href="#">Money Refund</a>
+
                 <a href="#">Shipping</a>
-                <a href="#">Contact Us</a>
+
+                <a href="#">Contact us</a>
+
             </div>
+
             <div class="f-col">
+
                 <h4>For users</h4>
+
                 <a href="#">Login</a>
+
                 <a href="#">Register</a>
+
                 <a href="#">Settings</a>
+
                 <a href="#">My Orders</a>
 
             </div>
-                        <div class="f-col">
+
+            <div class="f-col">
 
                 <h4>Get app</h4>
 
                 <div class="app-badges">
 
-                    <a href="#"><img src="layouts/app-stor-download.png" alt="AppStore " width="124px" height="42px"></a>
+                    <a href="#"><img src="../layouts/app-stor-download.png" alt="AppStore " width="124px" height="42px"></a>
 
-                    <a href="#"><img src="layouts/google-play-download.png" alt="GooglePlay"  width="124px" height="42px"></a>
+                    <a href="#"><img src="../layouts/google-play-download.png" alt="GooglePlay"  width="124px" height="42px"></a>
 
                 </div>
 
             </div>
 
         </div>
+
         <div class="footer-bottom">
+
             <div class="container bottom-flex">
+
                 <p>© 2023 Ecommerce.</p>
-                <div>English 
-                    <i class="fa fa-chevron-up"></i>
+
+                <div class="lang-select"><img src="../layouts/bottom-flag-1.png" width="20"> English <i class="fa fa-chevron-up"></i>
                 </div>
+
             </div>
+
         </div>
+
     </footer>
 
 </body>
-
 </html>
+

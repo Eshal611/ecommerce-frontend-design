@@ -10,8 +10,8 @@
 
     <title>Ecommerce-frontend-design</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="layouts/brand-image-logo.png">
+    <link rel="stylesheet" href="../main-html/style.css">
+    <link rel="icon" type="image/x-icon" href="../layouts/brand-image-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -24,17 +24,17 @@
 
         <div class="container nav-top">
 
-            <div class="logo"><img src="layouts/brand-image-logo.png" alt="Brand Logo" width=" 160px"></div>
+            <div class="logo"><img src="../layouts/brand-image-logo.png" alt="Brand Logo" width=" 160px"></div>
 
             <div class="search-bar">
 
                 <input type="text" placeholder="Search">
 
-                <select>
-                    <option>Select Category</option>
+                <select onchange="window.location.href=this.value">
+                    <option value="">Select Category</option>
                     <option>Clothes and Wear</option>
                     <option>Home Interiors</option>
-                    <option>Computer and Tech</option>
+                    <option value="list-view.html">Computer and Tech</option>
                     <option>Tools, equipments</option>
                     <option>Sports and outdoor</option>
                     <option>Animal and pets</option>
@@ -47,20 +47,21 @@
 
             <div class="user-actions">
 
-                <div class="action-item"><img src="layouts/prof-icon.png" width="16px" height="16px" alt="Profile Icon"
-                        class="action-icon">
+                <div class="action-item"><img src="../layouts/prof-icon.png" width="16px" height="16px"
+                        alt="Profile Icon" class="action-icon">
                     <p>Profile</p>
                 </div>
 
-                <div class="action-item"><img src="layouts/Message.png" width="16px" height="16px" alt="Message Icon">
+                <div class="action-item"><img src="../layouts/Message.png" width="16px" height="16px"
+                        alt="Message Icon">
                     <p>Message</p>
                 </div>
 
-                <div class="action-item"><img src="layouts/orders.png" width="16px" height="16px" alt="Message Icon">
+                <div class="action-item"><img src="../layouts/orders.png" width="16px" height="16px" alt="Message Icon">
                     <p>Orders</p>
                 </div>
 
-                <div class="action-item"><img src="layouts/MyCart.png" width="16px" height="16px" alt="Message Icon">
+                <div class="action-item"><img src="../layouts/MyCart.png" width="16px" height="16px" alt="Message Icon">
                     <p>My cart</p>
                 </div>
 
@@ -93,12 +94,13 @@
 
                 <div class="nav-links-right">
 
-                    <div class="nav-item">English, USD <img src="layouts/showarrow.png" width="12px" height="7.41px"
+                    <div class="nav-item">English, USD <img src="../layouts/showarrow.png" width="12px" height="7.41px"
                             top="8.3px"> </div>
 
-                    <div class="nav-item">Ship to <img src="layouts/germany-flag.png" width="22px" height="16px"
-                            top="21px" left="6px" alt="flag"> <img src="layouts/showarrow.png" width="12px"
-                            height="7.41px"> </div>
+                    <div class="nav-item">Ship to <img src="../layouts/germany-flag.png" width="22px" height="16px"
+                            top="21px" left="6px" alt="flag">
+                        <img src="../layouts/showarrow.png" width="12px" height="7.41px">
+                    </div>
 
                 </div>
 
@@ -122,7 +124,7 @@
 
                 <li>Home interiors</li>
 
-                <li>Computer and tech</li>
+                <li><a href="list-view.html">Computer and tech</a></li>
 
                 <li>Tools, equipments</li>
 
@@ -138,17 +140,17 @@
 
         </aside>
 
-        <div class="hero-banner ">
+        <div class="hero-banner " onclick="window.location.href='grid-view.html'">
             <h3>Latest trending<br><span>Electronic items</span></h3>
 
-            <button class="btn-white">Learn more</button>
+            <button class="btn-white" onclick="window.location.href='list-view.html'">Learn more</button>
         </div>
 
         <div class="hero-widgets">
 
             <div class="widget blue-light">
 
-                <DIV class="profile-header"><img src="layouts/profile-icon.png" width="54px" height="54px " top="196px"
+                <DIV class="profile-header"><img src="../layouts/profile-icon.png" width="54px" height="54px " top="196px"
                         left="1100px">
                     <p>Hi, user<br> let's get started</p>
                 </div>
@@ -195,25 +197,25 @@
 
         <div class="deal-products">
 
-            <div class="d-item"><img src="layouts/smart-watches.png" width="140px" height=" 140px">
+            <div class="d-item"><img src="../layouts/smart-watches.png" width="140px" height=" 140px">
                 <p>Smart watches</p><span class="discount">-25%</span>
             </div>
 
-            <div class="d-item"><img src="layouts/laptops.png" width="140px" height=" 140px" left="6.54px"
+            <div class="d-item"><img src="../layouts/laptops.png" width="140px" height=" 140px" left="6.54px"
                     top="20.53px">
                 <p>Laptops</p><span class="discount">-15%</span>
             </div>
 
-            <div class="d-item"><img src="layouts/GoPro-Camera.png" width="140px" height=" 140px" top="8px"
+            <div class="d-item"><img src="../layouts/GoPro-Camera.png" width="140px" height=" 140px" top="8px"
                     left="20.54px">
                 <p>GoPro cameras</p><span class="discount">-40%</span>
             </div>
 
-            <div class="d-item"><img src="layouts/HeadPhones.png" width="140px" height="140px">
+            <div class="d-item"><img src="../layouts/HeadPhones.png" width="140px" height="140px">
                 <p>Headphones</p><span class="discount">-25%</span>
             </div>
 
-            <div class="d-item"><img src="layouts/Canon-Cameras.png" width="140px" height="140px">
+            <div class="d-item"><img src="../layouts/Canon-Cameras.png" width="140px" height="140px">
                 <p>Canon cameras</p><span class="discount">-25%</span>
             </div>
 
@@ -238,51 +240,51 @@
             <div class="c-item">
                 <div>
                     <p>Soft chairs</p><span>From<br>USD 19</span>
-                </div><img src="layouts/soft-chair.png" width="82.37px" height="82px" top="42px" left="140px"
+                </div><img src="../layouts/soft-chair.png" width="82.37px" height="82px" top="42px" left="140px"
                     alt="soft-chair">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Sofa & chair</p><span>From<br>USD 19</span>
-                </div><img src="layouts/home-appliances-lamp.png" width="82.37px" height="82px " alt="home-appliances">
+                </div><img src="../layouts/home-appliances-lamp.png" width="82.37px" height="82px " alt="home-appliances">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Kitchen dishes</p><span>From<br>USD 19</span>
-                </div><img src="layouts/kitchen-dishes.png" width="82.37px" height="82px " top="42px"
+                </div><img src="../layouts/kitchen-dishes.png" width="82.37px" height="82px " top="42px"
                     alt="kitchen dishes">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Smart Watches</p><span>From<br>USD 19</span>
-                </div><img src="layouts/smart-watches-copy.png" width="82.37px" height="82px" alt="smart watches">
+                </div><img src="../layouts/smart-watches-copy.png" width="82.37px" height="82px" alt="smart watches">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Kitchen mixer</p><span>From<br>USD 100</span>
-                </div><img src="layouts/kitchen-mixer.png" width="82.37px" height="82px" alt="kitchen mixer">
+                </div><img src="../layouts/kitchen-mixer.png" width="82.37px" height="82px" alt="kitchen mixer">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Blenders</p><span>From<br>USD 39</span>
-                </div><img src="layouts/blenders.png" width="82.37px" height="82px" alt="blenders">
+                </div><img src="../layouts/blenders.png" width="82.37px" height="82px" alt="blenders">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Home appliance</p><span>From<br>USD 19</span>
-                </div><img src="layouts/home-appliance.png" width="82.37px" height="82px" alt="home appliace">
+                </div><img src="../layouts/home-appliance.png" width="82.37px" height="82px" alt="home appliace">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Coffee maker</p><span>From<br>USD 10</span>
-                </div><img src="layouts/coffe-maker.png" width="82px" height="82px" alt="coffee maker">
+                </div><img src="../layouts/coffe-maker.png" width="82px" height="82px" alt="coffee maker">
             </div>
 
         </div>
@@ -306,49 +308,49 @@
             <div class="c-item">
                 <div>
                     <p>Smart watches</p><span>From USD 19</span>
-                </div><img src="layouts/smart-watches.png">
+                </div><img src="../layouts/smart-watches.png">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Cameras</p><span>From USD 89</span>
-                </div><img src="layouts/GoPro-Camera.png">
+                </div><img src="../layouts/GoPro-Camera.png">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Headphones</p><span>From USD 10</span>
-                </div><img src="layouts/white-headphones.png">
+                </div><img src="../layouts/white-headphones.png">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Smart watches</p><span>From USD 30</span>
-                </div><img src="layouts/kettle.png">
+                </div><img src="../layouts/kettle.png">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Gaming set</p><span>From USD 35</span>
-                </div><img src="layouts/HeadPhones.png">
+                </div><img src="../layouts/HeadPhones.png">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Laptops & PC</p><span>From USD 340</span>
-                </div><img src="layouts/laptops.png">
+                </div><img src="../layouts/laptops.png">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Smartphones</p><span>From USD 19</span>
-                </div><img src="layouts/Lsmart-phones.png">
+                </div><img src="../layouts/Lsmart-phones.png">
             </div>
 
             <div class="c-item">
                 <div>
                     <p>Electric kettle</p><span>From USD 240</span>
-                </div><img src="layouts/red-smart-phone.png">
+                </div><img src="../layouts/red-smart-phone.png">
             </div>
 
         </div>
@@ -374,18 +376,18 @@
             <div class="form-group"><input type="text" placeholder="What item you need?"></div>
 
             <div class="form-group"><textarea placeholder="Type more details"></textarea></div>
-                <div class="form-row">
-                        <button>Quantity</button>
-                    <!-- <input type="number" placeholder="Quantity"> -->
+            <div class="form-row">
+                <button>Quantity</button>
+                <!-- <input type="number" placeholder="Quantity"> -->
 
-                    <select>
-                        <option>Pcs</option>
-                        <option>Kg</option>
-                    </select>
+                <select>
+                    <option>Pcs</option>
+                    <option>Kg</option>
+                </select>
 
-                </div>
+            </div>
 
-                <button class=" btn-full">Send inquiry</button>
+            <button class=" btn-full">Send inquiry</button>
         </div>
 
     </section>
@@ -398,46 +400,46 @@
 
         <div class="rec-grid">
 
-            <div class="p-card"><img src="layouts/T-shirts-grey-for-men.png" width="200px"
+            <div class="p-card"><img src="../layouts/T-shirts-grey-for-men.png" width="200px"
                     height="200px"><strong>$10.30</strong>
                 <p>T-shirts with multiple colors, for men</p>
             </div>
 
-            <div class="p-card"><img src="layouts/brown-jacket.png" width="200px" height="200px"><strong>$10.30</strong>
+            <div class="p-card"><img src="../layouts/brown-jacket.png" width="200px" height="200px"><strong>$10.30</strong>
                 <p>Jeans shorts for men blue color</p>
             </div>
 
-            <div class="p-card"><img src="layouts/blue-coat.png" width="200px" height="200px"><strong>$12.50</strong>
+            <div class="p-card"><img src="../layouts/blue-coat.png" width="200px" height="200px"><strong>$12.50</strong>
                 <p>Brown winter coat medium size</p>
             </div>
 
-            <div class="p-card"><img src="layouts/blue-wallet.png" width="200px" height="200px"><strong>$34.00</strong>
+            <div class="p-card"><img src="../layouts/blue-wallet.png" width="200px" height="200px"><strong>$34.00</strong>
                 <p>Jeans bag for travel for men</p>
             </div>
 
-            <div class="p-card"><img src="layouts/blue-bag.png" width="200px" height="200px"><strong>$99.00</strong>
+            <div class="p-card"><img src="../layouts/blue-bag.png" width="200px" height="200px"><strong>$99.00</strong>
                 <p>Leather wallet</p>
             </div>
 
-            <div class="p-card"><img src="layouts/blue-jeans.png" width="200px" height="200px"><strong>$9.99</strong>
+            <div class="p-card"><img src="../layouts/blue-jeans.png" width="200px" height="200px"><strong>$9.99</strong>
                 <p>Canon camera black, 100x zoom</p>
             </div>
 
-            <div class="p-card"><img src="layouts/white-headphones.png" width="200px"
+            <div class="p-card"><img src="../layouts/white-headphones.png" width="200px"
                     height="200px"><strong>$8.99</strong>
                 <p>Headset for gaming with mic</p>
             </div>
 
-            <div class="p-card"><img src="layouts/blue-bag.png" width="200px" height="200px"><strong>$10.30</strong>
+            <div class="p-card"><img src="../layouts/blue-bag.png" width="200px" height="200px"><strong>$10.30</strong>
                 <p>Smartwatch silver color modern</p>
             </div>
 
-            <div class="p-card"><img src="layouts/smart-watches-copy.png" width="200px"
+            <div class="p-card"><img src="../layouts/smart-watches-copy.png" width="200px"
                     height="200px"><strong>$10.30</strong>
                 <p>Blue wallet for men leather metarfial</p>
             </div>
 
-            <div class="p-card"><img src="layouts/kettle.png" width="200px" height="200px"><strong>$80.95</strong>
+            <div class="p-card"><img src="../layouts/kettle.png" width="200px" height="200px"><strong>$80.95</strong>
                 <p>Jeans bag for travel for men</p>
             </div>
 
@@ -453,7 +455,7 @@
 
         <div class="srv-grid">
 
-            <div class="s-card"><img src="layouts/services1.png" class="srv-img" width="280px" height="120px"
+            <div class="s-card"><img src="../layouts/services1.png" class="srv-img" width="280px" height="120px"
                     opacity="50%">
                 <div class="s-icon"><i class="fa fa-search"> </i> </div>
                 <div class="s-content">
@@ -461,21 +463,21 @@
                 </div>
             </div>
 
-            <div class="s-card"><img src="layouts/services2.png" class="srv-img">
+            <div class="s-card"><img src="../layouts/services2.png" class="srv-img">
                 <div class="s-icon"><i class="fa fa-box"></i></div>
                 <div class="s-content">
                     <p>Customize Your<br>Products</p>
                 </div>
             </div>
 
-            <div class="s-card"><img src="layouts/services3.png" class="srv-img">
+            <div class="s-card"><img src="../layouts/services3.png" class="srv-img">
                 <div class="s-icon"><i class="fa fa-plane"></i></div>
                 <div class="s-content">
                     <p>Fast, reliable shipping<br>by ocean or air</p>
                 </div>
             </div>
 
-            <div class="s-card"><img src="layouts/services4.png" class="srv-img">
+            <div class="s-card"><img src="../layouts/services4.png" class="srv-img">
                 <div class="s-icon"><i class="fa fa-shield"></i></div>
                 <div class="s-content">
                     <p>Product monitoring<br>and inspection</p>
@@ -486,92 +488,92 @@
 
     </section>
 
-<section class="container regions-section">
-    <h3 class="section-title">Suppliers by region</h3>
-    
-    <div class="region-grid">
-        <div class="region-item">
-            <img src="layouts/arabic-emirates.png" width="28px" height="20px" alt="UAE">
-            <div class="region-info">
-                <p class="country-name">Arabic Emirates</p>
-                <p class="site-link">shopname.ae</p>
-            </div>
-        </div>
+    <section class="container regions-section">
+        <h3 class="section-title">Suppliers by region</h3>
 
-        <div class="region-item">
-            <img src="layouts/australia.png" width="28px" height="20px" alt="Australia">
-            <div class="region-info">
-                <p class="country-name">Australia</p>
-                <p class="site-link">shopname.au</p>
+        <div class="region-grid">
+            <div class="region-item">
+                <img src="../layouts/arabic-emirates.png" width="28px" height="20px" alt="UAE">
+                <div class="region-info">
+                    <p class="country-name">Arabic Emirates</p>
+                    <p class="site-link">shopname.ae</p>
+                </div>
             </div>
-        </div>
 
-        <div class="region-item">
-            <img src="layouts/US.png"  width="28px" height="20px" alt="USA">
-            <div class="region-info">
-                <p class="country-name">United States</p>
-                <p class="site-link">shopname.com</p>
+            <div class="region-item">
+                <img src="../layouts/australia.png" width="28px" height="20px" alt="Australia">
+                <div class="region-info">
+                    <p class="country-name">Australia</p>
+                    <p class="site-link">shopname.au</p>
+                </div>
             </div>
-        </div>
 
-        <div class="region-item">
-            <img src="layouts/russia.png" width="28px" height="20px" alt="Russia">
-            <div class="region-info">
-                <p class="country-name">Russia</p>
-                <p class="site-link">shopname.ru</p>
+            <div class="region-item">
+                <img src="../layouts/US.png" width="28px" height="20px" alt="USA">
+                <div class="region-info">
+                    <p class="country-name">United States</p>
+                    <p class="site-link">shopname.com</p>
+                </div>
             </div>
-        </div>
 
-        <div class="region-item">
-            <img src="layouts/italy.png" width="28px" height="20px" alt="Italy">
-            <div class="region-info">
-                <p class="country-name">Italy</p>
-                <p class="site-link">shopname.it</p>
+            <div class="region-item">
+                <img src="../layouts/russia.png" width="28px" height="20px" alt="Russia">
+                <div class="region-info">
+                    <p class="country-name">Russia</p>
+                    <p class="site-link">shopname.ru</p>
+                </div>
             </div>
-        </div>
 
-        <div class="region-item">
-            <img src="layouts/denmark.png"   width="28px" height="20px"alt="Denmark">
-            <div class="region-info">
-                <p class="country-name">Denmark</p>
-                <p class="site-link">denmark.com.dk</p>
+            <div class="region-item">
+                <img src="../layouts/italy.png" width="28px" height="20px" alt="Italy">
+                <div class="region-info">
+                    <p class="country-name">Italy</p>
+                    <p class="site-link">shopname.it</p>
+                </div>
             </div>
-        </div>
 
-        <div class="region-item">
-            <img src="layouts/france.png" width="28px" height="20px" alt="France">
-            <div class="region-info">
-                <p class="country-name">France</p>
-                <p class="site-link">shopname.com.fr</p>
+            <div class="region-item">
+                <img src="../layouts/denmark.png" width="28px" height="20px" alt="Denmark">
+                <div class="region-info">
+                    <p class="country-name">Denmark</p>
+                    <p class="site-link">denmark.com.dk</p>
+                </div>
             </div>
-        </div>
 
-        <div class="region-item">
-            <img src="layouts/arabic-emirates.png"  width="28px" height="20px" alt="Arabic">
-            <div class="region-info">
-                <p class="country-name">Arabic Emirates</p>
-                <p class="site-link">shopname.ae</p>
+            <div class="region-item">
+                <img src="../layouts/france.png" width="28px" height="20px" alt="France">
+                <div class="region-info">
+                    <p class="country-name">France</p>
+                    <p class="site-link">shopname.com.fr</p>
+                </div>
             </div>
-        </div>
 
-        <div class="region-item">
-            <img src="layouts/china.png"  width="28px" height="20px" alt="China">
-            <div class="region-info">
-                <p class="country-name">China</p>
-                <p class="site-link">
-                    shopname.ae</p>
+            <div class="region-item">
+                <img src="../layouts/arabic-emirates.png" width="28px" height="20px" alt="Arabic">
+                <div class="region-info">
+                    <p class="country-name">Arabic Emirates</p>
+                    <p class="site-link">shopname.ae</p>
+                </div>
             </div>
-        </div>
 
-        <div class="region-item">
-            <img src="layouts/great-britian.png" width="28px" height="20px" alt="UK">
-            <div class="region-info">
-                <p class="country-name">Great Britain</p>
-                <p class="site-link">shopname.co.uk</p>
+            <div class="region-item">
+                <img src="../layouts/china.png" width="28px" height="20px" alt="China">
+                <div class="region-info">
+                    <p class="country-name">China</p>
+                    <p class="site-link">
+                        shopname.ae</p>
+                </div>
+            </div>
+
+            <div class="region-item">
+                <img src="../layouts/great-britian.png" width="28px" height="20px" alt="UK">
+                <div class="region-info">
+                    <p class="country-name">Great Britain</p>
+                    <p class="site-link">shopname.co.uk</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer class="footer-main">
 
@@ -599,7 +601,7 @@
 
             <div class="f-col brand-col">
 
-                <img src="layouts/brand-image-logo.png" alt="Logo" width="150px"  height="46px" class="footer-logo">
+                <img src="../layouts/brand-image-logo.png" alt="Logo" width="150px" height="46px" class="footer-logo">
 
                 <p>Best information about the company<br>gies here but now lorem ipsum is</p>
 
@@ -681,9 +683,11 @@
 
                 <div class="app-badges">
 
-                    <a href="#"><img src="layouts/app-stor-download.png" alt="AppStore " width="124px" height="42px"></a>
+                    <a href="#"><img src="../layouts/app-stor-download.png" alt="AppStore " width="124px"
+                            height="42px"></a>
 
-                    <a href="#"><img src="layouts/google-play-download.png" alt="GooglePlay"  width="124px" height="42px"></a>
+                    <a href="#"><img src="../layouts/google-play-download.png" alt="GooglePlay" width="124px"
+                            height="42px"></a>
 
                 </div>
 
@@ -697,7 +701,8 @@
 
                 <p>© 2023 Ecommerce.</p>
 
-                <div class="lang-select"><img src="layouts/bottom-flag-1.png" width="20"> English <i class="fa fa-chevron-up"></i>
+                <div class="lang-select"><img src="../layouts/bottom-flag-1.png" width="20"> English <i
+                        class="fa fa-chevron-up"></i>
                 </div>
 
             </div>
