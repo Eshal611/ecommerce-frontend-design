@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Full List View</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../main-html/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -17,11 +17,11 @@
             <div class="logo"><img src="../layouts/brand-image-logo.png" alt="Logo" width="160px"></div>
             <div class="search-bar">
                 <input type="text" placeholder="Search">
-               <select onchange="window.location.href=this.value">
+                <select onchange="window.location.href=this.value">
                     <option value="">Select Category</option>
                     <option>Clothes and Wear</option>
                     <option>Home Interiors</option>
-                    <option value="list-view.html">Computer and Tech</option>
+                    <option value="Techitems-listview.html">Computer and Tech</option>
                     <option>Tools, equipments</option>
                     <option>Sports and outdoor</option>
                     <option>Animal and pets</option>
@@ -65,7 +65,8 @@
         </nav>
     </header>
     <div class="container" style="padding: 15px 0 0 0;">
-        <button onclick="location.href='grid-view.html'" style="cursor:pointer; padding: 5px 10px; border: 1px solid #dee2e7; background: #fff; border-radius: 6px;">
+        <button onclick="location.href='../User-view/Techitems-gridview.html'"
+            style="cursor:pointer; padding: 5px 10px; border: 1px solid #dee2e7; background: #fff; border-radius: 6px;">
             <i class="fa fa-list"></i> Switch to Grid View
         </button>
     </div>
@@ -147,71 +148,75 @@
                     </select>
                     <div class="lv-view-toggle">
                         <button class="active"><i class="fa fa-list"></i></button>
-                        <button><i class="fa fa-th-large"></i></button>
+                        <button onclick="location.href='../User-view/Techitems-gridview.html'"><i class="fa fa-th-large"></i></button>
                     </div>
                 </div>
             </div>
 
-            <div class="lv-card">
+            <div class="lv-card" onclick="window.open('../web-detail-product/Detail-Iphone12-pro-red.html', '_blank')">
                 <div class="lv-card-left"><img src="../layouts/red-smart-phone.png"></div>
                 <div class="lv-card-mid">
-                    <p id="lv-brand-head">Canon Cmera EOS 2000, Black 10x zoom</p>
+                    <p id="lv-brand-head">iPhone 12 Product Red - Super Retina XDR & A14 Bionic Chip</p>
                     <div class="lv-card-price"><strong>$998.00</strong> <del>$1128.00</del></div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <p>Make a bold statement with this premium (PRODUCT)RED iPhone 12. Featuring a sharp Super Retina
+                        XDR display and an advanced dual-camera system, it effortlessly captures vibrant Night-mode
+                        photos and cinematic 4K video.</p>
 
                     <a href="#" class="lv-blue-txt">View details</a>
                 </div>
                 <button class="lv-heart-btn"><i class="far fa-heart"></i></button>
             </div>
 
-            <div class="lv-card">
+            <div class="lv-card" onclick="window.open('../web-detail-product/Detail-Techno-Spark-20.html', '_blank')">
                 <div class="lv-card-left"><img src="../layouts/Canon-Cameras.png"></div>
                 <div class="lv-card-mid">
-                    <p id="lv-brand-head">GoPro HERO6 Black 4K Action Camera-Black</p>
+                    <p id="lv-brand-head">Tecno Spark 20 - 90Hz Vibrant Display & 50MP Ultra-Clear Camera</p>
                     <div class="lv-card-price"><strong>$998.00</strong></div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
                     </div>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit </p>
+                    <p>Built with a sleek, glowing design and dual stereo speakers, it’s the perfect, stylish tool for
+                        an active digital lifestyle. Stay connected on the go with this versatile high-definition mobile
+                        companion.</p>
                     <a href="#" class="lv-blue-txt">View details</a>
                 </div>
                 <button class="lv-heart-btn"><i class="far fa-heart"></i></button>
             </div>
 
-            <div class="lv-card">
+            <div class="lv-card" onclick="window.open('../web-detail-product/Detail-Xiaomi-Pad-5.html', '_blank')">
                 <div class="lv-card-left"><img src="../layouts/Lsmart-phones.png"></div>
                 <div class="lv-card-mid">
-                    <p id="lv-brand-head">GoPro HERO6 4K Action Camera - Black</p>
+                    <p id="lv-brand-head">Xiaomi Pad 5 - 120Hz WQHD+ Display & Snapdragon 860</p>
                     <div class="lv-card-price"><strong>$998.00</strong> </div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
                     </div>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit </p>
+                    <p> Built with a sleek, lightweight frame and support for the Xiaomi Smart Pen, it’s the perfect,
+                        stylish tool for a modern digital lifestyle. Experience professional-grade performance on the go
+                        with this tablet.</p>
                     <a href="#" class="lv-blue-txt">View details</a>
                 </div>
                 <button class="lv-heart-btn"><i class="far fa-heart"></i></button>
             </div>
 
-            <div class="lv-card">
+            <div class="lv-card" onclick="window.open('../web-detail-product/Detail-laptops.html', '_blank')"
+                style="cursor: pointer;">
                 <div class="lv-card-left"><img src="../layouts/laptops.png"></div>
                 <div class="lv-card-mid">
-                    <p id="lv-brand-head">GoPro HERO6 4K Action Camera - Black</p>
+                    <p id="lv-brand-head">MateBook X Pro - 4K Ultra HD Display & 12-Hour Battery Life</p>
                     <div class="lv-card-price"><strong>$998.00</strong></div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
                     </div>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit </p>
+                    <p> Featuring a stunning 4K edge-to-edge display and an ergonomic backlit keyboard, it seamlessly
+                        handles heavy multitasking, creative work, and entertainment with long-lasting battery life.</p>
                     <a href="#" class="lv-blue-txt">View details</a>
                 </div>
                 <button class="lv-heart-btn"><i class="far fa-heart"></i></button>
@@ -220,14 +225,14 @@
             <div class="lv-card">
                 <div class="lv-card-left"><img src="../layouts/smart-watches.png"></div>
                 <div class="lv-card-mid">
-                    <p id="lv-brand-head">GoPro HERO6 4K Action Camera - Black</p>
+                    <p id="lv-brand-head">Z26 Pro Smartwatch - HD Display & 10-Day Battery</p>
                     <div class="lv-card-price"><strong>$988.00</strong><del>$1128.00</del></div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★★</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
                     </div>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit </p>
+                    <p>Water-resistant with customizable faces, it’s the perfect, stylish tool for an active lifestyle.
+                        Stay connected on the go with this versatile wellness companion.</p>
                     <a href="#" class="lv-blue-txt">View details</a>
                 </div>
                 <button class="lv-heart-btn"><i class="far fa-heart"></i></button>
@@ -236,14 +241,14 @@
             <div class="lv-card">
                 <div class="lv-card-left"><img src="../layouts/white-headphones.png"></div>
                 <div class="lv-card-mid">
-                    <p id="lv-brand-head">GoPro HERO6 4K Action Camera - Black</p>
+                    <p id="lv-brand-head">SoundPro Air - Active Noise Cancellation & 40-Hour Battery Life</p>
                     <div class="lv-card-price"><strong>$988.00</strong> </div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
                     </div>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit </p>
+                    <p>Built with a lightweight, foldable frame and gold-accented finish, they are the perfect, stylish
+                        tool for an immersive musical lifestyle</p>
                     <a href="#" class="lv-blue-txt">View details</a>
                 </div>
                 <button class="lv-heart-btn"><i class="far fa-heart"></i></button>
@@ -264,7 +269,7 @@
         </section>
     </main>
 
-        <footer class="footer-main">
+    <footer class="footer-main">
 
         <div class="newsletter">
 
@@ -290,9 +295,9 @@
 
             <div class="f-col brand-col">
 
-                <img src="../layouts/brand-image-logo.png" alt="Logo" width="150px"  height="46px" class="footer-logo">
+                <img src="../layouts/brand-image-logo.png" alt="Logo" width="150px" height="46px" class="footer-logo">
 
-                <p>Best information about the company<br>gies here but now lorem ipsum is</p>
+                <p>Your trusted source for premium <br>gadgets and modern lifestyle essentials</p>
 
                 <div class="socials">
 
@@ -372,9 +377,11 @@
 
                 <div class="app-badges">
 
-                    <a href="#"><img src="../layouts/app-stor-download.png" alt="AppStore " width="124px" height="42px"></a>
+                    <a href="#"><img src="../layouts/app-stor-download.png" alt="AppStore " width="124px"
+                            height="42px"></a>
 
-                    <a href="#"><img src="../layouts/google-play-download.png" alt="GooglePlay"  width="124px" height="42px"></a>
+                    <a href="#"><img src="../layouts/google-play-download.png" alt="GooglePlay" width="124px"
+                            height="42px"></a>
 
                 </div>
 
@@ -388,7 +395,8 @@
 
                 <p>© 2023 Ecommerce.</p>
 
-                <div class="lang-select"><img src="../layouts/bottom-flag-1.png" width="20"> English <i class="fa fa-chevron-up"></i>
+                <div class="lang-select"><img src="../layouts/bottom-flag-1.png" width="20"> English <i
+                        class="fa fa-chevron-up"></i>
                 </div>
 
             </div>
@@ -398,5 +406,5 @@
     </footer>
 
 </body>
-</html>
 
+</html>

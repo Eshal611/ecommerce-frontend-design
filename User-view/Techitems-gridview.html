@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Grid View</title>
-    <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main-html/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body class="lv-body">
 
     <header class="main-header">
@@ -20,7 +22,7 @@
                     <option value="">Select Category</option>
                     <option>Clothes and Wear</option>
                     <option>Home Interiors</option>
-                    <option value="list-view.html">Computer and Tech</option>
+                    <option value="../User-view/Techitems-listview.html">Computer and Tech</option>
                     <option>Tools, equipments</option>
                     <option>Sports and outdoor</option>
                     <option>Animal and pets</option>
@@ -31,13 +33,21 @@
                 <button class="btn-blue">Search</button>
             </div>
             <div class="user-actions">
-                <div class="action-item"><img src="../layouts/prof-icon.png" width="16px"><p>Profile</p></div>
-                <div class="action-item"><img src="../layouts/Message.png" width="16px"><p>Message</p></div>
-                <div class="action-item"><img src="../layouts/orders.png" width="16px"><p>Orders</p></div>
-                <div class="action-item"><img src="../layouts/MyCart.png" width="16px"><p>My cart</p></div>
+                <div class="action-item"><img src="../layouts/prof-icon.png" width="16px">
+                    <p>Profile</p>
+                </div>
+                <div class="action-item"><img src="../layouts/Message.png" width="16px">
+                    <p>Message</p>
+                </div>
+                <div class="action-item"><img src="../layouts/orders.png" width="16px">
+                    <p>Orders</p>
+                </div>
+                <div class="action-item"><img src="../layouts/MyCart.png" width="16px">
+                    <p>My cart</p>
+                </div>
             </div>
         </div>
-                <nav class="nav-bottom">
+        <nav class="nav-bottom">
 
             <div class="container bottom-nav-container">
 
@@ -77,13 +87,15 @@
     </header>
 
     <div class="container" style="padding: 15px 0 0 0;">
-        <button onclick="location.href='list-view.html'" style="cursor:pointer; padding: 5px 10px; border: 1px solid #dee2e7; background: #fff; border-radius: 6px;">
+        <button onclick="location.href='../User-view/Techitems-listview.html'"
+            style="cursor:pointer; padding: 5px 10px; border: 1px solid #dee2e7; background: #fff; border-radius: 6px;">
             <i class="fa fa-list"></i> Switch to List View
         </button>
     </div>
 
     <div class="container lv-breadcrumb">
-        Home <i class="fa fa-chevron-right"></i> Clothings <i class="fa fa-chevron-right"></i> Men's wear <i class="fa fa-chevron-right"></i> Summer clothing
+        Home <i class="fa fa-chevron-right"></i> Clothings <i class="fa fa-chevron-right"></i> Men's wear <i
+            class="fa fa-chevron-right"></i> Summer clothing
     </div>
 
     <main class="container lv-grid">
@@ -139,9 +151,11 @@
                 <span>12,911 items in <b>Mobile accessory</b></span>
                 <div class="lv-top-actions">
                     <label><input type="checkbox"> Verified only</label>
-                    <select><option>Featured</option></select>
+                    <select>
+                        <option>Featured</option>
+                    </select>
                     <div class="lv-view-toggle">
-                        <button onclick="location.href='listview.html'"><i class="fa fa-th-large"></i></button>
+                        <button onclick="location.href='../User-view/Techitems-listview.html'"><i class="fa fa-th-large"></i></button>
                         <button class="active"><i class="fa fa-list"></i></button>
                     </div>
                 </div>
@@ -158,7 +172,7 @@
             </div>
 
             <div class="gv-container">
-                <div class="gv-card">
+                <div class="gv-card" onclick="window.open('../web-detail-product/Detail-Iphone12-pro-red.html', '_blank')">
                     <div class="gv-img-box"><img src="../layouts/red-smart-phone.png"></div>
                     <div class="gv-details">
                         <div class="gv-price-line">
@@ -166,21 +180,99 @@
                             <button class="gv-heart"><i class="far fa-heart"></i></button>
                         </div>
                         <div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div>
+                        <p>iPhone 12 Product Red - Super Retina XDR & A14 Bionic Chip</p>
+                    </div>
+                </div>
+                <div class="gv-card" onclick="window.open('../web-detail-product/Detail-Gaming-set.html', '_blank')">
+                    <div class="gv-img-box">
+                        <img src="../layouts/HeadPhones.png">
+                    </div>
+                    <div class="gv-details">
+                        <div class="gv-price-line">
+                            <span class="gv-price">$35.00</span>
+                            <del>$118.00</del>
+                            <button class="gv-heart"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="gv-stars">
+                            <span class="stars">★★★☆☆</span> 5.9
+                        </div>
+                        <p>Cosmic Byte G-2026 - Surround Sound & Noise Cancelling Mic</p>
+                    </div>
+                </div>
+                <div class="gv-card" onclick="window.open('../web-detail-product/Detail-Techno-Spark-20.html', '_blank')">
+                    <div class="gv-img-box"><img src="../layouts/Canon-Cameras.png"></div>
+                    <div class="gv-details">
+                        <div class="gv-price-line"><span class="gv-price">$99.50</span> <button class="gv-heart"><i
+                                    class="far fa-heart"></i></button></div>
+                        <div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div>
+                        <p>Tecno Spark 20 - 90Hz Vibrant Display & 50MP Ultra-Clear Camera</p>
+                    </div>
+                </div>
+                <div class="gv-card" onclick="window.open('../web-detail-product/Detail-Xiaomi-Pad-5.html', '_blank')">
+                    <div class="gv-img-box"><img src="../layouts/Lsmart-phones.png"></div>
+                    <div class="gv-details">
+                        <div class="gv-price-line"><span class="gv-price">$99.50</span> <del>$1128.00</del><button
+                                class="gv-heart"><i class="far fa-heart"></i></button></div>
+                        <div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div>
                         <p>GoPro HERO6 4K Action Camera - Black</p>
                     </div>
                 </div>
-                <div class="gv-card"><div class="gv-img-box"><img src="../layouts/iphone-blue.png"></div><div class="gv-details"><div class="gv-price-line"><span class="gv-price">$99.50</span> <del>$1128.00</del><button class="gv-heart"><i class="far fa-heart"></i></button></div><div class="gv-stars"><span class="stars">★★★☆☆</span> 5.9</div><p>GoPro HERO6 4K Action Camera - Black</p></div></div>
-                <div class="gv-card"><div class="gv-img-box"><img src="../layouts/Canon-Cameras.png"></div><div class="gv-details"><div class="gv-price-line"><span class="gv-price">$99.50</span> <button class="gv-heart"><i class="far fa-heart"></i></button></div><div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div><p>GoPro HERO6 4K Action Camera - Black</p></div></div>
-                <div class="gv-card"><div class="gv-img-box"><img src="../layouts/Lsmart-phones.png"></div><div class="gv-details"><div class="gv-price-line"><span class="gv-price">$99.50</span> <del>$1128.00</del><button class="gv-heart"><i class="far fa-heart"></i></button></div><div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div><p>GoPro HERO6 4K Action Camera - Black</p></div></div>
-                <div class="gv-card"><div class="gv-img-box"><img src="../layouts/GoPro-Camera.png"></div><div class="gv-details"><div class="gv-price-line"><span class="gv-price">$99.50</span> <del>$1128.00</del><button class="gv-heart"><i class="far fa-heart"></i></button></div><div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div><p>GoPro HERO6 4K Action Camera - Black</p></div></div>
-                <div class="gv-card"><div class="gv-img-box"><img src="../layouts/iphone-blue.png"></div><div class="gv-details"><div class="gv-price-line"><span class="gv-price">$99.50</span> <button class="gv-heart"><i class="far fa-heart"></i></button></div><div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div><p>GoPro HERO6 4K Action Camera - Black</p></div></div>
-                <div class="gv-card"><div class="gv-img-box"><img src="../layouts/laptops.png"></div><div class="gv-details"><div class="gv-price-line"><span class="gv-price">$99.50</span> <del>$1128.00</del><button class="gv-heart"><i class="far fa-heart"></i></button></div><div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div><p>GoPro HERO6 4K Action Camera - Black</p></div></div>
-                <div class="gv-card"><div class="gv-img-box"><img src="../layouts/smart-watches.png"></div><div class="gv-details"><div class="gv-price-line"><span class="gv-price">$99.50</span> <del>$1128.00</del><button class="gv-heart"><i class="far fa-heart"></i></button></div><div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div><p>GoPro HERO6 4K Action Camera - Black</p></div></div>
-                <div class="gv-card"><div class="gv-img-box"><img src="../layouts/red-smart-phone.png"></div><div class="gv-details"><div class="gv-price-line"><span class="gv-price">$99.50</span><button class="gv-heart"><i class="far fa-heart"></i></button></div><div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div><p>GoPro HERO6 4K Action Camera - Black</p></div></div>
+                <div class="gv-card"
+                    onclick="window.open('../web-detail-product/Detail-canon-camera.html', '_blank')"
+                    style="cursor: pointer;">
+                    <div class="gv-img-box"><img src="../layouts/GoPro-Camera.png"></div>
+                    <div class="gv-details">
+                        <div class="gv-price-line"><span class="gv-price">$99.50</span> <del>$1128.00</del><button
+                                class="gv-heart"><i class="far fa-heart"></i></button></div>
+                        <div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div>
+                        <p>GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                </div>
+                <div class="gv-card"
+                    onclick="window.open('../web-detail-product/Detail-Iphone12-pro-blue.html', '_blank')"
+                    style="cursor: pointer;">
+                    <div class="gv-img-box"><img src="../layouts/iphone-blue.png"></div>
+                    <div class="gv-details">
+                        <div class="gv-price-line"><span class="gv-price">$99.50</span> <button class="gv-heart"><i
+                                    class="far fa-heart"></i></button></div>
+                        <div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div>
+                        <p>GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                </div>
+                <div class="gv-card" onclick="window.open('../web-detail-product/Detail-laptops.html', '_blank')" style="cursor: pointer;">
+                    <div class="gv-img-box"><img src="../layouts/laptops.png"></div>
+                    <div class="gv-details">
+                        <div class="gv-price-line"><span class="gv-price">$99.50</span> <del>$1128.00</del><button
+                                class="gv-heart"><i class="far fa-heart"></i></button></div>
+                        <div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div>
+                        <p>GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                </div>
+                <div class="gv-card" onclick="window.open('../web-detail-product/Detail-smart-watch.html', '_blank')" style="cursor: pointer;">
+                    <div class="gv-img-box"><img src="../layouts/smart-watches.png"></div>
+                    <div class="gv-details">
+                        <div class="gv-price-line"><span class="gv-price">$99.50</span> <del>$1128.00</del><button
+                                class="gv-heart"><i class="far fa-heart"></i></button></div>
+                        <div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div>
+                        <p>GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                </div>
+                <div class="gv-card" onclick="window.open('../web-detail-product/Detail-headphones.html', '_blank')"
+                    style="cursor: pointer;">
+                    <div class="gv-img-box"><img src="../layouts/white-headphones.png"></div>
+                    <div class="gv-details">
+                        <div class="gv-price-line"><span class="gv-price">$99.50</span><button class="gv-heart"><i
+                                    class="far fa-heart"></i></button></div>
+                        <div class="gv-stars"><span class="stars">★★★★☆</span> 7.5</div>
+                        <p>Luxe Audio Pro - Gold Edition Noise Cancelling Headphones</p>
+                    </div>
+                </div>
             </div>
 
             <div class="lv-pagination" style="margin-top: 30px;">
-                <select><option>Show 10</option></select>
+                <select>
+                    <option>Show 10</option>
+                </select>
                 <div class="lv-pages">
                     <button><i class="fa fa-chevron-left"></i></button>
                     <button class="active">1</button>
@@ -192,7 +284,7 @@
         </section>
     </main>
 
-        <footer class="footer-main">
+    <footer class="footer-main">
 
         <div class="newsletter">
 
@@ -218,9 +310,9 @@
 
             <div class="f-col brand-col">
 
-                <img src="../layouts/brand-image-logo.png" alt="Logo" width="150px"  height="46px" class="footer-logo">
+                <img src="../layouts/brand-image-logo.png" alt="Logo" width="150px" height="46px" class="footer-logo">
 
-                <p>Best information about the company<br>gies here but now lorem ipsum is</p>
+                <p>Your trusted source for premium <br>gadgets and modern lifestyle essentials</p>
 
                 <div class="socials">
 
@@ -300,9 +392,11 @@
 
                 <div class="app-badges">
 
-                    <a href="#"><img src="../layouts/app-stor-download.png" alt="AppStore " width="124px" height="42px"></a>
+                    <a href="#"><img src="../layouts/app-stor-download.png" alt="AppStore " width="124px"
+                            height="42px"></a>
 
-                    <a href="#"><img src="../layouts/google-play-download.png" alt="GooglePlay"  width="124px" height="42px"></a>
+                    <a href="#"><img src="../layouts/google-play-download.png" alt="GooglePlay" width="124px"
+                            height="42px"></a>
 
                 </div>
 
@@ -316,7 +410,8 @@
 
                 <p>© 2023 Ecommerce.</p>
 
-                <div class="lang-select"><img src="../layouts/bottom-flag-1.png" width="20"> English <i class="fa fa-chevron-up"></i>
+                <div class="lang-select"><img src="../layouts/bottom-flag-1.png" width="20"> English <i
+                        class="fa fa-chevron-up"></i>
                 </div>
 
             </div>
@@ -326,5 +421,5 @@
     </footer>
 
 </body>
-</html>
 
+</html>
