@@ -533,8 +533,7 @@ body {
     background-image: url('../layouts/quote-box.png');
     background-size: cover;
     background-position: center;
-    max-width: 90%;
-    width: 1180px;
+    width: 93%;
     margin: 30px auto 0 auto;
     height: 420px;
     padding: 40px;
