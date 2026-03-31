@@ -533,7 +533,8 @@ body {
     background-image: url('../layouts/quote-box.png');
     background-size: cover;
     background-position: center;
-    width: 93%;
+    max-width: 90%;
+    width: 1180px;
     margin: 30px auto 0 auto;
     height: 420px;
     padding: 40px;
@@ -1853,4 +1854,514 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/* Large screens (1200px to 1399px) */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+        width: 95%;
+    }
+
+    .search-bar {
+        width: 500px;
+        max-width: 500px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 220px 1fr 200px;
+        gap: 15px;
+    }
+
+    .rec-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .srv-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .region-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .cat-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .c-item {
+        padding: 12px;
+        height: 120px;
+    }
+
+    .c-item img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .deal-products {
+        flex-wrap: wrap;
+    }
+
+    .d-item {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .inquiry-card {
+        width: 450px;
+        padding: 25px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+}
+
+/* Extra Large screens (1400px and above) */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+        width: 90%;
+    }
+
+    .hero-grid {
+        grid-template-columns: 260px 1fr 240px;
+        gap: 25px;
+    }
+
+    .search-bar {
+        width: 700px;
+        max-width: 700px;
+    }
+
+    .rec-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .srv-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+    .region-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .cat-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .c-item {
+        padding: 18px;
+        height: 135px;
+    }
+
+    .c-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .deal-products {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .d-item {
+        flex: 1;
+    }
+
+    .inquiry-card {
+        width: 491px;
+        padding: 30px;
+    }
+
+    .footer-links {
+        gap: 30px;
+    }
+
+    .f-col {
+        min-width: 140px;
+    }
+}
+
+/* For screens between 992px and 1199px (laptop/desktop) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+        width: 95%;
+    }
+
+    .search-bar {
+        width: 400px;
+        max-width: 400px;
+    }
+
+    .search-bar select {
+        width: 110px;
+        padding: 0 8px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 200px 1fr 200px;
+        gap: 15px;
+    }
+
+    .hero-banner {
+        padding: 30px;
+        min-height: 260px;
+    }
+
+    .hero-banner h3 {
+        font-size: 24px;
+    }
+
+    .hero-banner span {
+        font-size: 28px;
+    }
+
+    .rec-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .srv-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .region-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .cat-banner {
+        min-width: 240px !important;
+        width: 240px !important;
+    }
+
+    .cat-banner h3 {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .c-item {
+        padding: 10px;
+        height: 110px;
+    }
+
+    .c-item div p {
+        font-size: 14px;
+    }
+
+    .c-item div span {
+        font-size: 11px;
+    }
+
+    .c-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .deal-timer {
+        width: 240px;
+        padding: 15px;
+    }
+
+    .deal-timer h4 {
+        font-size: 18px;
+    }
+
+    .t-box {
+        width: 40px;
+        height: 34px;
+        font-size: 10px;
+    }
+
+    .t-box span {
+        font-size: 14px;
+    }
+
+    .d-item {
+        padding: 15px;
+    }
+
+    .d-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .d-item p {
+        font-size: 14px;
+    }
+
+    .inquiry-banner {
+        width: 95%;
+        padding: 30px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .inquiry-card {
+        width: 100%;
+        max-width: 450px;
+        align-self: flex-start;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .f-col {
+        flex: 1;
+        min-width: 160px;
+    }
+
+    .nav-links-left {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .user-actions {
+        gap: 12px;
+    }
+}
+
+/* For very large screens (1600px and above) */
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1500px;
+        width: 85%;
+    }
+
+    .hero-grid {
+        grid-template-columns: 280px 1fr 260px;
+        gap: 30px;
+    }
+
+    .search-bar {
+        width: 800px;
+        max-width: 800px;
+        height: 52px;
+    }
+
+    .search-bar input {
+        font-size: 16px;
+    }
+
+    .rec-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 25px;
+    }
+
+    .srv-grid {
+        gap: 30px;
+    }
+
+    .region-grid {
+        gap: 25px;
+    }
+
+    .cat-banner {
+        min-width: 320px !important;
+        width: 320px !important;
+    }
+
+    .cat-banner h3 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+    .c-item {
+        padding: 20px;
+        height: 145px;
+    }
+
+    .c-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .deal-timer {
+        width: 320px;
+        padding: 25px;
+    }
+
+    .deal-timer h4 {
+        font-size: 24px;
+    }
+
+    .t-box {
+        width: 55px;
+        height: 48px;
+    }
+
+    .t-box span {
+        font-size: 20px;
+    }
+
+    .d-item img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .inquiry-card {
+        width: 540px;
+        padding: 35px;
+    }
+
+    .footer-links {
+        gap: 50px;
+    }
+}
+
+/* For screens between 768px and 991px - upper tablet/laptop */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        width: 95%;
+    }
+
+    .nav-top {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .user-actions {
+        justify-content: center;
+    }
+
+    .bottom-nav-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links-left {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links-right {
+        justify-content: center;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .hero-widgets {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .rec-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .srv-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .region-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .cat-block {
+        flex-direction: column;
+    }
+
+    .cat-banner {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 30px !important;
+        min-height: 200px;
+    }
+
+    .cat-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .c-item {
+        border-right: 1px solid var(--border);
+    }
+
+    .c-item:nth-child(2n) {
+        border-right: none;
+    }
+
+    .deals-section {
+        flex-direction: column;
+    }
+
+    .deal-timer {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .deal-products {
+        flex-wrap: wrap;
+    }
+
+    .d-item {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .inquiry-banner {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .inquiry-card {
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .f-col {
+        flex: 1;
+        min-width: 160px;
+    }
 }
