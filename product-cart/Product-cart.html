@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="../main-html/style.css">
+    <link rel="icon" type="image/x-icon" href="../layouts/brand-image-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="main-header">
+
+        <div class="container nav-top">
+
+            <div class="logo"><img src="../layouts/brand-image-logo.png" alt="Brand Logo" width=" 160px"></div>
+
+            <div class="search-bar">
+
+                <input type="text" placeholder="Search">
+
+                <select onchange="window.location.href=this.value">
+                    <option value="">Select Category</option>
+                    <option value="../User-view/Home-and-Outdoor-listview.html">Home Interiors</option>
+                    <option value="../User-view/Techitems-listview.html">Computer and Tech</option>
+                </select>
+
+                <button class="btn-blue">Search</button>
+
+            </div>
+
+            <div class="user-actions">
+
+                <div class="action-item"><img src="../layouts/prof-icon.png" width="16px" height="16px"
+                        alt="Profile Icon" class="action-icon">
+                    <p>Profile</p>
+                </div>
+
+                <div class="action-item"><img src="../layouts/Message.png" width="16px" height="16px"
+                        alt="Message Icon">
+                    <p>Message</p>
+                </div>
+
+                <div class="action-item"><img src="../layouts/orders.png" width="16px" height="16px" alt="Message Icon">
+                    <p>Orders</p>
+                </div>
+
+                <div class="action-item"><img src="../layouts/MyCart.png" width="16px" height="16px" alt="Message Icon">
+                    <p>My cart</p>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <main class="cr-cart-container">
+        <div class="cr-cart-wrapper">
+            <section class="cr-main-content">
+                <h1 class="cr-page-title">My cart (3)</h1>
+
+                <div class="cr-items-list">
+                    <div class="cr-cart-item">
+                        <div class="cr-item-info">
+                            <div class="cr-img-box"><img src="../layouts/T-shirts-grey-for-men.png" alt="Product"></div>
+                            <div class="cr-details">
+                                <h3 class="cr-item-name">T-shirts with multiple colors, for men and lady</h3>
+                                <p class="cr-meta">Size: medium, Color: blue, Material: 95% Cotton, 5% Spandex</p>
+                                <p class="cr-seller">Seller: Artel Market</p>
+                                <div class="cr-item-actions">
+                                    <button class="cr-btn-remove">Remove</button>
+                                    <button class="cr-btn-later">Save for later</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cr-item-pricing">
+                            <span class="cr-price">$24.99</span>
+                            <select class="cr-qty-select">
+                                <option>Qty: 1</option>
+                                <option>Qty: 2</option>
+                                <option>Qty: 3</option>
+                                <option>Qty: 4</option>
+                                <option>Qty: 5</option>
+                                <option>Qty: 6</option>
+                                <option>Qty: 7</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cr-cart-item">
+                        <div class="cr-item-info">
+                            <div class="cr-img-box"><img src="../layouts/blue-bag.png" alt="Product"></div>
+                            <div class="cr-details">
+                                <h3 class="cr-item-name">Vintage Blue Denim Backpack - Casual Drawstring School & Travel Bag</h3>
+                                <p class="cr-meta">Size: Large, Color: Blue, Material: Denim</p>
+                                <p class="cr-seller">Seller: Best Factory LLC</p>
+                                <div class="cr-item-actions">
+                                    <button class="cr-btn-remove">Remove</button>
+                                    <button class="cr-btn-later">Save for later</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cr-item-pricing">
+                            <span class="cr-price">$39.00</span>
+                            <select class="cr-qty-select">
+                                <option>Qty: 1</option>
+                                <option>Qty: 2</option>
+                                <option>Qty: 3</option>
+                                <option>Qty: 4</option>
+                                <option>Qty: 5</option>
+                                <option>Qty: 6</option>
+                                <option>Qty: 7</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cr-cart-item">
+                        <div class="cr-item-info">
+                            <div class="cr-img-box"><img src="../layouts/home-appliances-lamp.png" alt="Product"></div>
+                            <div class="cr-details">
+                                <h3 class="cr-item-name">Luna Ceramic Table Lamp - Stone Textured Base & Fabric Shade</h3>
+                                <p class="cr-meta">Size: 12" x 12" x 18" (Standard) Material: Ceramic Base</p>
+                                <p class="cr-seller">Seller: Elite Leather Co.</p>
+                                <div class="cr-item-actions">
+                                    <button class="cr-btn-remove">Remove</button>
+                                    <button class="cr-btn-later">Save for later</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cr-item-pricing">
+                            <span class="cr-price">$59.00</span>
+                            <select class="cr-qty-select">
+                                <option>Qty: 1</option>
+                                <option>Qty: 2</option>
+                                <option>Qty: 3</option>
+                                <option>Qty: 4</option>
+                                <option>Qty: 5</option>
+                                <option>Qty: 6</option>
+                                <option>Qty: 7</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cr-cart-footer">
+                    <button class="cr-btn-back" onclick="window.open('../main-html/index.html', '_blank')" style="cursor: pointer;">← Back to shop</button>
+                    <button class="cr-btn-clear">Remove all</button>
+                </div>
+
+                <div class="cr-features-grid">
+                    <div class="cr-feature">
+                        <div class="cr-feature-icon"><img src="../layouts/secure-pay.png" alt="Secure"></div>
+                        <div class="cr-feature-text">Secure payment<p>Have you ever finally just</p>
+                        </div>
+                    </div>
+                    <div class="cr-feature">
+                        <div class="cr-feature-icon"><img src="../layouts/support.png" alt="Support"></div>
+                        <div class="cr-feature-text">Customer support<p>Have you ever finally just</p>
+                        </div>
+                    </div>
+                    <div class="cr-feature">
+                        <div class="cr-feature-icon"><img src="../layouts/delivery.png" alt="Delivery"></div>
+                        <div class="cr-feature-text">Free delivery<p>Have you ever finally just</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="cr-sidebar">
+                <div class="cr-coupon-box">
+                    <p>Have a coupon?</p>
+                    <div class="cr-coupon-input">
+                        <input type="text" placeholder="Add coupon">
+                        <button>Apply</button>
+                    </div>
+                </div>
+
+                <div class="cr-summary-card">
+                    <div class="cr-sum-row"><span>Subtotal:</span> <span>$1403.97</span></div>
+                    <div class="cr-sum-row cr-red"><span>Discount:</span> <span>- $60.00</span></div>
+                    <div class="cr-sum-row cr-green"><span>Tax:</span> <span>+ $14.00</span></div>
+                    <hr class="cr-divider">
+                    <div class="cr-sum-row cr-total"><strong>Total:</strong> <strong>$1357.97</strong></div>
+                    <button class="cr-checkout-btn">Checkout</button>
+                    <div class="cr-payment-container">
+                        <img src="../layouts/pay1.png" alt="Pay1">
+                        <img src="../layouts/pay2.png" alt="Pay2">
+                        <img src="../layouts/pay3.png" alt="Pay3">
+                        <img src="../layouts/pay4.png" alt="Pay4">
+                        <img src="../layouts/pay5.png" alt="Pay5">
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <div class="container footer-links">
+
+        <div class="f-col brand-col">
+
+            <img src="../layouts/brand-image-logo.png" alt="Logo" width="150px" height="46px" class="footer-logo">
+
+            <p>Your trusted source for premium <br>gadgets and modern lifestyle essentials</p>
+
+            <div class="socials">
+
+                <i class="fab fa-facebook-f"></i>
+
+                <i class="fab fa-twitter"></i>
+
+                <i class="fab fa-linkedin-in"></i>
+
+                <i class="fab fa-instagram"></i>
+
+                <i class="fab fa-youtube"></i>
+
+            </div>
+
+        </div>
+
+        <div class="f-col">
+
+            <h4>About</h4>
+
+            <a href="#">About Us</a>
+
+            <a href="#">Find store</a>
+
+            <a href="#">Categories</a>
+
+            <a href="#">Blogs</a>
+
+        </div>
+
+        <div class="f-col">
+
+            <h4>Partnership</h4>
+
+            <a href="#">About Us</a>
+
+            <a href="#">Find store</a>
+
+            <a href="#">Categories</a>
+
+            <a href="#">Blogs</a>
+
+        </div>
+
+        <div class="f-col">
+
+            <h4>Information</h4>
+
+            <a href="#">Help Center</a>
+
+            <a href="#">Money Refund</a>
+
+            <a href="#">Shipping</a>
+
+            <a href="#">Contact us</a>
+
+        </div>
+
+        <div class="f-col">
+
+            <h4>For users</h4>
+
+            <a href="#">Login</a>
+
+            <a href="#">Register</a>
+
+            <a href="#">Settings</a>
+
+            <a href="#">My Orders</a>
+
+        </div>
+
+        <div class="f-col">
+
+            <h4>Get app</h4>
+
+            <div class="app-badges">
+
+                <a href="#"><img src="../layouts/app-stor-download.png" alt="AppStore " width="124px" height="42px"></a>
+
+                <a href="#"><img src="../layouts/google-play-download.png" alt="GooglePlay" width="124px"
+                        height="42px"></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="container bottom-flex">
+
+            <p>© 2023 Ecommerce.</p>
+
+            <div class="lang-select"><img src="../layouts/bottom-flag-1.png" width="20"> English <i
+                    class="fa fa-chevron-up"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+    </footer>
+</body>
+
+</html>
