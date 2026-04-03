@@ -418,10 +418,6 @@ body {
     letter-spacing: 0px;
 }
 
-/* --- ASYMMETRIC LAYOUT --- */
-
-/* --- ASYMMETRIC LAYOUT (FIXED) --- */
-
 .cat-block {
     display: flex;
     background: var(--white);
@@ -460,7 +456,6 @@ body {
 .cat-banner button {
     width: 123px;
     height: 40px;
-    /* absolute positioning removal needed for flexibility */
     position: relative;
     top: auto;
     left: auto;
@@ -494,7 +489,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     height: 128px;
-    /* Standard row height */
     box-sizing: border-box;
 }
 
@@ -806,8 +800,6 @@ body {
 
     margin-bottom: 12px;
 
-    /* Link spacing added here */
-
 }
 
 
@@ -1016,13 +1008,23 @@ body {
 
     display: grid;
 
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 
     gap: 6px;
 
     margin-top: 20px;
 }
 
+.arec-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 6px;
+
+    margin-top: 20px;
+}
 
 
 .p-card {
@@ -1530,8 +1532,7 @@ body {
 
 /* web-detail-product */
 /* 4rth page 4th page detail-smart-watch */
-/* --- Product Detail Specifics --- */
-/* --- Variables & Core (Aapki existing file se match) --- */
+/* --- Product Detail  --- */
 :root {
     --blue: #0D6EFD;
     --border: #E3E8EE;
@@ -1548,7 +1549,6 @@ body {
     font-size: 14px;
 }
 
-/* --- Section 1: Main Product Layout --- */
 .product-detail-card {
     display: grid;
     grid-template-columns: 380px 1fr 280px;
@@ -1559,7 +1559,6 @@ body {
     padding: 20px;
 }
 
-/* Gallery Styling */
 .main-img-box {
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -1600,7 +1599,6 @@ body {
     object-fit: contain;
 }
 
-/* Info & Price Tiers */
 .pd-info h1 {
     font-size: 20px;
     font-weight: 600;
@@ -1658,7 +1656,6 @@ body {
     margin: 12px 0;
 }
 
-/* Seller Sidebar Box */
 .seller-card {
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -1763,7 +1760,7 @@ body {
 .side-item {
     display: flex;
     gap: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
     align-items: center;
 }
 
@@ -1790,19 +1787,25 @@ body {
 .rp-img {
     background: #EEEEEE;
     border-radius: 6px;
-    height: 140px;
+    height: 172px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .rp-img img {
+    mix-blend-mode: multiply;
     max-width: 80%;
 }
+.rp-card p { color: #1C1C1C; } 
+.rp-card span { color: #8B96A5; }
+
+.side-info p { color: #1C1C1C; } 
+.side-info span { color: #8B96A5; }
 
 /* --- Section 4: Discount Banner */
 .discount-banner-blue {
-    background: linear-gradient(90deg, #0067FF 0%, #127FFF 100%);
+background: linear-gradient(45deg, #127FFF 62%, #005ADE 62%);
     border-radius: 8px;
     padding: 28px 30px;
     display: flex;
@@ -1856,7 +1859,6 @@ body {
     object-fit: cover;
 }
 /* product cart page design */
-/* --- Global Variable Settings for Cart Page --- */
 :root {
     --cr-primary-blue: #0d6efd;
     --cr-success-green: #00b517;

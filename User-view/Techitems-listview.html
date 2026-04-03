@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Full List View</title>
     <link rel="stylesheet" href="../main-html/style.css">
+    <link rel="icon" type="image/png" href="../layouts/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -19,7 +20,7 @@
                 <input type="text" placeholder="Search">
                 <select onchange="window.location.href=this.value">
                     <option value="">Select Category</option>
-                    <option>Home Interiors</option>
+                    <option value="../User-view/Home-and-Outdoor-listview.html">Home Interiors</option>
                     <option value="Techitems-listview.html">Computer and Tech</option>
                 </select>
 
@@ -143,7 +144,8 @@
                     </select>
                     <div class="lv-view-toggle">
                         <button class="active"><i class="fa fa-list"></i></button>
-                        <button onclick="location.href='../User-view/Techitems-gridview.html'"><i class="fa fa-th-large"></i></button>
+                        <button onclick="location.href='../User-view/Techitems-gridview.html'"><i
+                                class="fa fa-th-large"></i></button>
                     </div>
                 </div>
             </div>
@@ -152,7 +154,7 @@
                 <div class="lv-card-left"><img src="../layouts/red-smart-phone.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">iPhone 12 Product Red - Super Retina XDR & A14 Bionic Chip</p>
-                    <div class="lv-card-price"><strong>$998.00</strong> <del>$1128.00</del></div>
+                    <div class="lv-card-price"><strong>$640.00</strong> <del>$1128.00</del></div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
@@ -170,7 +172,7 @@
                 <div class="lv-card-left"><img src="../layouts/Canon-Cameras.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">Tecno Spark 20 - 90Hz Vibrant Display & 50MP Ultra-Clear Camera</p>
-                    <div class="lv-card-price"><strong>$998.00</strong></div>
+                    <div class="lv-card-price"><strong>$99.50</strong></div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
@@ -187,7 +189,7 @@
                 <div class="lv-card-left"><img src="../layouts/Lsmart-phones.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">Xiaomi Pad 5 - 120Hz WQHD+ Display & Snapdragon 860</p>
-                    <div class="lv-card-price"><strong>$998.00</strong> </div>
+                    <div class="lv-card-price"><strong>$569.00</strong> </div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
@@ -205,7 +207,7 @@
                 <div class="lv-card-left"><img src="../layouts/laptops.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">MateBook X Pro - 4K Ultra HD Display & 12-Hour Battery Life</p>
-                    <div class="lv-card-price"><strong>$998.00</strong></div>
+                    <div class="lv-card-price"><strong>$640.00</strong></div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
@@ -217,11 +219,12 @@
                 <button class="lv-heart-btn"><i class="far fa-heart"></i></button>
             </div>
 
-            <div class="lv-card">
+            <div class="lv-card" onclick="window.open('../web-detail-product/Detail-smart-watch.html', '_blank')"
+                style="cursor: pointer;">
                 <div class="lv-card-left"><img src="../layouts/smart-watches.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">Z26 Pro Smartwatch - HD Display & 10-Day Battery</p>
-                    <div class="lv-card-price"><strong>$988.00</strong><del>$1128.00</del></div>
+                    <div class="lv-card-price"><strong>$19.00</strong><del>$1128.00</del></div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★★</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
@@ -233,11 +236,12 @@
                 <button class="lv-heart-btn"><i class="far fa-heart"></i></button>
             </div>
 
-            <div class="lv-card">
+            <div class="lv-card" onclick="window.open('../web-detail-product/Detail-headphones.html', '_blank')"
+                style="cursor: pointer;">
                 <div class="lv-card-left"><img src="../layouts/white-headphones.png"></div>
                 <div class="lv-card-mid">
                     <p id="lv-brand-head">SoundPro Air - Active Noise Cancellation & 40-Hour Battery Life</p>
-                    <div class="lv-card-price"><strong>$988.00</strong> </div>
+                    <div class="lv-card-price"><strong>$30.00</strong> </div>
                     <div class="lv-card-stats"><span class="lv-stars">★★★★☆</span> <span class="lv-rate-pts">7.5</span>
                         <span class="lv-dot"></span> 154 orders <span class="lv-dot"></span> <span class="lv-green">Free
                             Shipping</span>
